@@ -5,4 +5,5 @@ mangahub
 
 2. https://www.flutterbeads.com/change-app-name-in-flutter/?expand_article=1
 
-3. https://www.flutterbeads.com/change-app-launcher-icon-flutter/
+3. https://www.flutterbeads.com/change-app-launcher-icon-flutter/?expand_article=1
+    --> flutter pub run flutter_launcher_icons:main
