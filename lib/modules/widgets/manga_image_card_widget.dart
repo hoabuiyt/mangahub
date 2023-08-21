@@ -4,15 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/manga.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/eval/bridge_class/model.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/colors.dart';
-import 'package:mangayomi/utils/headers.dart';
-import 'package:mangayomi/modules/widgets/bottom_text_widget.dart';
-import 'package:mangayomi/modules/widgets/cover_view_widget.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/manga.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/eval/bridge_class/model.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/colors.dart';
+import 'package:mangahub/utils/headers.dart';
+import 'package:mangahub/modules/widgets/bottom_text_widget.dart';
+import 'package:mangahub/modules/widgets/cover_view_widget.dart';
 
 class MangaImageCardWidget extends ConsumerWidget {
   final String lang;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/colors.dart';
-import 'package:mangayomi/modules/more/settings/appearance/providers/theme_mode_state_provider.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/colors.dart';
+import 'package:mangahub/modules/more/settings/appearance/providers/theme_mode_state_provider.dart';
 // import 'package:rive/rive.dart';
 
 class DarkModeButton extends ConsumerStatefulWidget {

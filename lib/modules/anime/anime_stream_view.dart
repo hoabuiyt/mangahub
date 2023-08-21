@@ -5,12 +5,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_meedu_videoplayer/meedu_player.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart' as riv;
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/video.dart';
-import 'package:mangayomi/modules/anime/providers/stream_controller_provider.dart';
-import 'package:mangayomi/modules/widgets/progress_center.dart';
-import 'package:mangayomi/services/get_anime_servers.dart';
-import 'package:mangayomi/utils/media_query.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/video.dart';
+import 'package:mangahub/modules/anime/providers/stream_controller_provider.dart';
+import 'package:mangahub/modules/widgets/progress_center.dart';
+import 'package:mangahub/services/get_anime_servers.dart';
+import 'package:mangahub/utils/media_query.dart';
 
 class AnimeStreamView extends riv.ConsumerStatefulWidget {
   final Chapter episode;

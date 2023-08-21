@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mangayomi/modules/more/widgets/incognito_mode_widget.dart';
-import 'package:mangayomi/modules/more/widgets/list_tile_widget.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
+import 'package:mangahub/modules/more/widgets/incognito_mode_widget.dart';
+import 'package:mangahub/modules/more/widgets/list_tile_widget.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
 
 class MoreScreen extends StatelessWidget {
   const MoreScreen({super.key});
@@ -14,16 +14,16 @@ class MoreScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
-                height: 200,
-                // child: Center(
-                //     child: Image.asset(
-                //   "assets/icon.png",
-                //   color: Theme.of(context).brightness == Brightness.light
-                //       ? Colors.black
-                //       : Colors.white,
-                // ))
-                ),
+            const SizedBox(
+              height: 200,
+              // child: Center(
+              //     child: Image.asset(
+              //   "assets/icon.png",
+              //   color: Theme.of(context).brightness == Brightness.light
+              //       ? Colors.black
+              //       : Colors.white,
+              // ))
+            ),
             const Divider(),
             // ListTile(
             //   onTap: () {},

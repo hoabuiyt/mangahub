@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/colors.dart';
-import 'package:mangayomi/utils/media_query.dart';
-import 'package:mangayomi/modules/more/settings/reader/providers/reader_state_provider.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/colors.dart';
+import 'package:mangahub/utils/media_query.dart';
+import 'package:mangahub/modules/more/settings/reader/providers/reader_state_provider.dart';
 
 class ReaderScreen extends ConsumerWidget {
   const ReaderScreen({super.key});

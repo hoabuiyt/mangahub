@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:grouped_list/grouped_list.dart';
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/source.dart';
-import 'package:mangayomi/modules/browse/sources/widgets/source_list_tile.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/language.dart';
-import 'package:mangayomi/modules/more/settings/browse/providers/browse_state_provider.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/source.dart';
+import 'package:mangahub/modules/browse/sources/widgets/source_list_tile.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/language.dart';
+import 'package:mangahub/modules/more/settings/browse/providers/browse_state_provider.dart';
 
 class SourcesScreen extends ConsumerWidget {
   final bool isManga;

@@ -3,10 +3,10 @@ import 'dart:typed_data';
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/utils/headers.dart';
-import 'package:mangayomi/utils/media_query.dart';
-import 'package:mangayomi/utils/reg_exp_matcher.dart';
-import 'package:mangayomi/modules/manga/reader/widgets/circular_progress_indicator_animate_rotate.dart';
+import 'package:mangahub/utils/headers.dart';
+import 'package:mangahub/utils/media_query.dart';
+import 'package:mangahub/utils/reg_exp_matcher.dart';
+import 'package:mangahub/modules/manga/reader/widgets/circular_progress_indicator_animate_rotate.dart';
 
 class ImageViewVertical extends ConsumerWidget {
   final int length;

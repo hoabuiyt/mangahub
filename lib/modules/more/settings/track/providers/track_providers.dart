@@ -1,7 +1,7 @@
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/track.dart';
-import 'package:mangayomi/models/track_preference.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/track.dart';
+import 'package:mangahub/models/track_preference.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'track_providers.g.dart';
 

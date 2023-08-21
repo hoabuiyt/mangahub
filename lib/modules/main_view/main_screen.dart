@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mangayomi/modules/more/about/providers/check_for_update.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/router/router.dart';
-import 'package:mangayomi/utils/colors.dart';
-import 'package:mangayomi/utils/media_query.dart';
-import 'package:mangayomi/modules/library/providers/library_state_provider.dart';
-import 'package:mangayomi/modules/more/providers/incognito_mode_state_provider.dart';
+import 'package:mangahub/modules/more/about/providers/check_for_update.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/router/router.dart';
+import 'package:mangahub/utils/colors.dart';
+import 'package:mangahub/utils/media_query.dart';
+import 'package:mangahub/modules/library/providers/library_state_provider.dart';
+import 'package:mangahub/modules/more/providers/incognito_mode_state_provider.dart';
 
 class MainScreen extends ConsumerWidget {
   const MainScreen({super.key, required this.child});
@@ -29,10 +29,10 @@ class MainScreen extends ConsumerWidget {
       int currentIndex = switch (location) {
         null => 0,
         '/MangaLibrary' => 0,
-        '/AnimeLibrary' => 1,
-        '/history' => 2,
-        '/browse' => 3,
-        _ => 4,
+        //'/AnimeLibrary' => 1,
+        '/history' => 1,
+        '/browse' => 2,
+        _ => 3,
       };
 
       final incognitoMode = ref.watch(incognitoModeStateProvider);
@@ -80,7 +80,7 @@ class MainScreen extends ConsumerWidget {
                               : location == null
                                   ? 100
                                   : location != '/MangaLibrary' &&
-                                          location != '/AnimeLibrary' &&
+                                          //location != '/AnimeLibrary' &&
                                           location != '/history' &&
                                           location != '/browse' &&
                                           location != '/more'
@@ -105,7 +105,7 @@ class MainScreen extends ConsumerWidget {
                                     label: Padding(
                                         padding: const EdgeInsets.only(top: 5),
                                         child: Text(l10n.manga))),
-                                NavigationRailDestination(
+                                /* NavigationRailDestination(
                                     selectedIcon: const Icon(
                                       Icons.video_collection,
                                     ),
@@ -115,7 +115,7 @@ class MainScreen extends ConsumerWidget {
                                     label: Padding(
                                       padding: const EdgeInsets.only(top: 5),
                                       child: Text(l10n.anime),
-                                    )),
+                                    )),*/
                                 NavigationRailDestination(
                                     selectedIcon: const Icon(
                                       Icons.new_releases,
@@ -153,13 +153,14 @@ class MainScreen extends ConsumerWidget {
                               onDestinationSelected: (newIndex) {
                                 if (newIndex == 0) {
                                   route.go('/MangaLibrary');
-                                } else if (newIndex == 1) {
+                                } /*else if (newIndex == 1) {
                                   route.go('/AnimeLibrary');
-                                } else if (newIndex == 2) {
+                                } */
+                                else if (newIndex == 1) {
                                   route.go('/history');
-                                } else if (newIndex == 3) {
+                                } else if (newIndex == 2) {
                                   route.go('/browse');
-                                } else if (newIndex == 4) {
+                                } else if (newIndex == 3) {
                                   route.go('/more');
                                 }
                               },
@@ -180,12 +181,14 @@ class MainScreen extends ConsumerWidget {
                           : location == null
                               ? 80
                               : location != '/MangaLibrary' &&
-                                      location != '/AnimeLibrary' &&
+                                      //location != '/AnimeLibrary' &&
                                       location != '/history' &&
                                       location != '/browse' &&
                                       location != '/more'
                                   ? 0
-                                  : Platform.isIOS? 110:80,
+                                  : Platform.isIOS
+                                      ? 110
+                                      : 80,
                       child: NavigationBarTheme(
                         data: NavigationBarThemeData(
                           indicatorShape: RoundedRectangleBorder(
@@ -204,14 +207,14 @@ class MainScreen extends ConsumerWidget {
                                   Icons.collections_bookmark_outlined,
                                 ),
                                 label: l10n.manga),
-                            NavigationDestination(
+                            /*NavigationDestination(
                                 selectedIcon: const Icon(
                                   Icons.video_collection,
                                 ),
                                 icon: const Icon(
                                   Icons.video_collection_outlined,
                                 ),
-                                label: l10n.anime),
+                                label: l10n.anime),*/
                             NavigationDestination(
                                 selectedIcon: const Icon(
                                   Icons.new_releases,
@@ -240,13 +243,14 @@ class MainScreen extends ConsumerWidget {
                           onDestinationSelected: (newIndex) {
                             if (newIndex == 0) {
                               route.go('/MangaLibrary');
-                            } else if (newIndex == 1) {
+                            } /*else if (newIndex == 1) {
                               route.go('/AnimeLibrary');
-                            } else if (newIndex == 2) {
+                            } */
+                            else if (newIndex == 1) {
                               route.go('/history');
-                            } else if (newIndex == 3) {
+                            } else if (newIndex == 2) {
                               route.go('/browse');
-                            } else if (newIndex == 4) {
+                            } else if (newIndex == 3) {
                               route.go('/more');
                             }
                           },

@@ -1,8 +1,8 @@
 import 'package:file_picker/file_picker.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/manga.dart';
-import 'package:mangayomi/modules/archive_reader/providers/archive_reader_providers.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/manga.dart';
+import 'package:mangahub/modules/archive_reader/providers/archive_reader_providers.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'local_archive.g.dart';
 

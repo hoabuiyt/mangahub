@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/models/track.dart';
-import 'package:mangayomi/models/track_preference.dart';
-import 'package:mangayomi/models/track_search.dart';
-import 'package:mangayomi/modules/manga/detail/providers/track_state_providers.dart';
-import 'package:mangayomi/modules/manga/detail/widgets/tracker_search_widget.dart';
-import 'package:mangayomi/modules/more/settings/track/providers/track_providers.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/colors.dart';
-import 'package:mangayomi/utils/constant.dart';
-import 'package:mangayomi/utils/date.dart';
-import 'package:mangayomi/utils/media_query.dart';
-import 'package:mangayomi/utils/utils.dart';
+import 'package:mangahub/models/track.dart';
+import 'package:mangahub/models/track_preference.dart';
+import 'package:mangahub/models/track_search.dart';
+import 'package:mangahub/modules/manga/detail/providers/track_state_providers.dart';
+import 'package:mangahub/modules/manga/detail/widgets/tracker_search_widget.dart';
+import 'package:mangahub/modules/more/settings/track/providers/track_providers.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/colors.dart';
+import 'package:mangahub/utils/constant.dart';
+import 'package:mangahub/utils/date.dart';
+import 'package:mangahub/utils/media_query.dart';
+import 'package:mangahub/utils/utils.dart';
 import 'package:numberpicker/numberpicker.dart';
 
 class TrackerWidget extends ConsumerStatefulWidget {

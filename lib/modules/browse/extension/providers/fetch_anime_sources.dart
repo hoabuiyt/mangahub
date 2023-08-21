@@ -1,8 +1,8 @@
 import 'dart:convert';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/models/source.dart';
-import 'package:mangayomi/modules/browse/extension/providers/fetch_manga_sources.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/models/source.dart';
+import 'package:mangahub/modules/browse/extension/providers/fetch_manga_sources.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:http/http.dart' as http;

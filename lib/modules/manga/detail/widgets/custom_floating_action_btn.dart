@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mangayomi/utils/colors.dart';
+import 'package:mangahub/utils/colors.dart';
 
 class CustomFloatingActionBtn extends StatelessWidget {
   final bool isExtended;

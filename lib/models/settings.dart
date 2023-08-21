@@ -1,6 +1,6 @@
 import 'package:isar/isar.dart';
-import 'package:mangayomi/models/source.dart';
-import 'package:mangayomi/utils/constant.dart';
+import 'package:mangahub/models/source.dart';
+import 'package:mangahub/utils/constant.dart';
 part 'settings.g.dart';
 
 @collection
@@ -149,7 +149,7 @@ class Settings {
       this.personalReaderModeList,
       this.animatePageTransitions = true,
       this.doubleTapAnimationSpeed = 1,
-      this.showNSFW = true,
+      this.showNSFW = false,
       this.onlyIncludePinnedSources = false,
       this.pureBlackDarkMode = false,
       this.downloadOnlyOnWifi = false,

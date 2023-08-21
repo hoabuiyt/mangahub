@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:http/http.dart' as http;
-import 'package:mangayomi/models/video.dart';
-import 'package:mangayomi/utils/extensions.dart';
+import 'package:mangahub/models/video.dart';
+import 'package:mangahub/utils/extensions.dart';
 
 class DoodExtractor {
   Future<List<Video>> videosFromUrl(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:mangayomi/modules/more/about/providers/check_for_update.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
+//import 'package:mangahub/modules/more/about/providers/check_for_update.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
@@ -56,7 +56,7 @@ class _AboutScreenState extends ConsumerState<AboutScreen> {
       ),
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 150,
             // child: Center(
             //     child: Image.asset(
@@ -83,8 +83,8 @@ class _AboutScreenState extends ConsumerState<AboutScreen> {
                 ),
                 ListTile(
                   onTap: () {
-                    ref.read(checkForUpdateProvider(
-                        context: context, manualUpdate: true));
+                    //ref.read(checkForUpdateProvider(
+                    //context: context, manualUpdate: true));
                   },
                   title: Text(l10n.check_for_update),
                 ),
@@ -106,7 +106,7 @@ class _AboutScreenState extends ConsumerState<AboutScreen> {
                     IconButton(
                         onPressed: () {
                           _launchInBrowser(Uri.parse(
-                              'https://github.com/kodjodevf/mangayomi'));
+                              'https://github.com/hoabuiyt/mangahub'));
                         },
                         icon: const Icon(FontAwesomeIcons.github))
                   ],

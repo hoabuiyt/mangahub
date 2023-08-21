@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/models/track_preference.dart';
-import 'package:mangayomi/modules/more/settings/track/providers/track_providers.dart';
-import 'package:mangayomi/utils/constant.dart';
+import 'package:mangahub/models/track_preference.dart';
+import 'package:mangahub/modules/more/settings/track/providers/track_providers.dart';
+import 'package:mangahub/utils/constant.dart';
 
 class TrackListile extends ConsumerWidget {
   final VoidCallback onTap;

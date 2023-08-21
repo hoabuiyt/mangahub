@@ -1,8 +1,8 @@
 import 'package:js_packer/js_packer.dart';
 import 'package:http/http.dart' as http;
-import 'package:mangayomi/models/video.dart';
-import 'package:mangayomi/utils/extensions.dart';
-import 'package:mangayomi/utils/xpath_selector.dart';
+import 'package:mangahub/models/video.dart';
+import 'package:mangahub/utils/extensions.dart';
+import 'package:mangahub/utils/xpath_selector.dart';
 
 class StreamWishExtractor {
   final http.Client client = http.Client();

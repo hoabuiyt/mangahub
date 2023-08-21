@@ -1,8 +1,8 @@
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/history.dart';
-import 'package:mangayomi/models/manga.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/history.dart';
+import 'package:mangahub/models/manga.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'isar_providers.g.dart';
 

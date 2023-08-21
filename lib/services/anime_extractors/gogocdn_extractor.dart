@@ -3,10 +3,10 @@ import 'package:encrypt/encrypt.dart';
 import 'package:flutter/services.dart';
 import 'package:html/dom.dart';
 import 'package:http/http.dart' as http;
-import 'package:mangayomi/models/video.dart';
+import 'package:mangahub/models/video.dart';
 import 'package:encrypt/encrypt.dart' as encrypt;
 import 'package:html/parser.dart' as parser;
-import 'package:mangayomi/utils/extensions.dart';
+import 'package:mangahub/utils/extensions.dart';
 
 class GogoCdnExtractor {
   final http.Client client = http.Client();

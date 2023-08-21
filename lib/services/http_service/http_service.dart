@@ -1,8 +1,8 @@
 // import 'package:html/dom.dart';
-// import 'package:mangayomi/services/http_service/cloudflare/cloudflare_bypass.dart';
+// import 'package:mangahub/services/http_service/cloudflare/cloudflare_bypass.dart';
 // import 'package:http/http.dart' as http;
-// import 'package:mangayomi/sources/utils/utils.dart';
-// import 'package:mangayomi/utils/headers.dart';
+// import 'package:mangahub/sources/utils/utils.dart';
+// import 'package:mangahub/utils/headers.dart';
 // import 'package:riverpod_annotation/riverpod_annotation.dart';
 // part 'http_service.g.dart';
 

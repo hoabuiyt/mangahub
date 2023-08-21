@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/download.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/providers/storage_provider.dart';
-import 'package:mangayomi/modules/manga/download/providers/download_provider.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/download.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/providers/storage_provider.dart';
+import 'package:mangahub/modules/manga/download/providers/download_provider.dart';
 
 class ChapterPageDownload extends ConsumerStatefulWidget {
   final Chapter chapter;

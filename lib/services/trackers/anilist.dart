@@ -2,13 +2,13 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:flutter_web_auth_2/flutter_web_auth_2.dart';
 import 'package:http/http.dart' as http;
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/track.dart';
-import 'package:mangayomi/models/track_preference.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/track.dart';
+import 'package:mangahub/models/track_preference.dart';
 import 'dart:convert';
-import 'package:mangayomi/models/track_search.dart';
-import 'package:mangayomi/modules/more/settings/track/myanimelist/model.dart';
-import 'package:mangayomi/modules/more/settings/track/providers/track_providers.dart';
+import 'package:mangahub/models/track_search.dart';
+import 'package:mangahub/modules/more/settings/track/myanimelist/model.dart';
+import 'package:mangahub/modules/more/settings/track/providers/track_providers.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'anilist.g.dart';
 
@@ -72,8 +72,7 @@ class Anilist extends _$Anilist {
   Future<Track> addLibManga(Track track) async {
     final accessToken = await _getAccesToken();
 
-    const query =
-        '''
+    const query = '''
     mutation AddManga(\$mangaId: Int, \$progress: Int, \$status: MediaListStatus) {
       SaveMediaListEntry(mediaId: \$mangaId, progress: \$progress, status: \$status) {
         id
@@ -107,8 +106,7 @@ class Anilist extends _$Anilist {
   Future<Track> addLibAnime(Track track) async {
     final accessToken = await _getAccesToken();
 
-    const query =
-        '''
+    const query = '''
     mutation AddAnime(\$animeId: Int, \$progress: Int, \$status: MediaListStatus) {
       SaveMediaListEntry(mediaId: \$animeId, progress: \$progress, status: \$status) {
         id
@@ -141,8 +139,7 @@ class Anilist extends _$Anilist {
 
   Future<Track> updateLibManga(Track track) async {
     final accessToken = await _getAccesToken();
-    const query =
-        '''
+    const query = '''
     mutation UpdateManga(\$listId: Int, \$progress: Int, \$status: MediaListStatus, \$score: Int, \$startedAt: FuzzyDateInput, \$completedAt: FuzzyDateInput) {
       SaveMediaListEntry(
         id: \$listId,
@@ -185,8 +182,7 @@ class Anilist extends _$Anilist {
 
   Future<Track> updateLibAnime(Track track) async {
     final accessToken = await _getAccesToken();
-    const query =
-        '''
+    const query = '''
     mutation UpdateAnime(\$listId: Int, \$progress: Int, \$status: MediaListStatus, \$score: Int, \$startedAt: FuzzyDateInput, \$completedAt: FuzzyDateInput) {
       SaveMediaListEntry(
         id: \$listId,
@@ -227,8 +223,7 @@ class Anilist extends _$Anilist {
 
   Future<List<TrackSearch>> search(String search) async {
     final accessToken = await _getAccesToken();
-    const query =
-        '''
+    const query = '''
     query Search(\$query: String) {
       Page(perPage: 50) {
         media(search: \$query, type: MANGA, format_not_in: [NOVEL]) {
@@ -294,8 +289,7 @@ class Anilist extends _$Anilist {
 
   Future<List<TrackSearch>> searchAnime(String search) async {
     final accessToken = await _getAccesToken();
-    const query =
-        '''
+    const query = '''
     query Search(\$query: String) {
       Page(perPage: 50) {
         media(search: \$query, type: ANIME) {
@@ -365,8 +359,7 @@ class Anilist extends _$Anilist {
     final userId = ref.watch(tracksProvider(syncId: syncId))!.username;
 
     final accessToken = await _getAccesToken();
-    const query =
-        '''
+    const query = '''
     query(\$id: Int!, \$manga_id: Int!) {
       Page {
         mediaList(userId: \$id, type: MANGA, mediaId: \$manga_id) {
@@ -448,8 +441,7 @@ class Anilist extends _$Anilist {
     final userId = ref.watch(tracksProvider(syncId: syncId))!.username;
 
     final accessToken = await _getAccesToken();
-    const query =
-        '''
+    const query = '''
     query(\$id: Int!, \$anime_id: Int!) {
       Page {
         mediaList(userId: \$id, type: ANIME, mediaId: \$anime_id) {
@@ -526,8 +518,7 @@ class Anilist extends _$Anilist {
   }
 
   Future<(String, String)> _getCurrentUser(String accessToken) async {
-    const query =
-        '''
+    const query = '''
     query User {
       Viewer {
         id

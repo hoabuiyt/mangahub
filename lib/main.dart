@@ -9,13 +9,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
 import 'package:isar/isar.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/providers/storage_provider.dart';
-import 'package:mangayomi/router/router.dart';
-import 'package:mangayomi/modules/more/settings/appearance/providers/blend_level_state_provider.dart';
-import 'package:mangayomi/modules/more/settings/appearance/providers/flex_scheme_color_state_provider.dart';
-import 'package:mangayomi/modules/more/settings/appearance/providers/pure_black_dark_mode_state_provider.dart';
-import 'package:mangayomi/modules/more/settings/appearance/providers/theme_mode_state_provider.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/providers/storage_provider.dart';
+import 'package:mangahub/router/router.dart';
+import 'package:mangahub/modules/more/settings/appearance/providers/blend_level_state_provider.dart';
+import 'package:mangahub/modules/more/settings/appearance/providers/flex_scheme_color_state_provider.dart';
+import 'package:mangahub/modules/more/settings/appearance/providers/pure_black_dark_mode_state_provider.dart';
+import 'package:mangahub/modules/more/settings/appearance/providers/theme_mode_state_provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 late Isar isar;
@@ -35,7 +35,7 @@ void main(List<String> args) async {
     iosUseMediaKit: true,
   );
   HttpOverrides.global = MyHttpoverrides();
-  if (Platform.isLinux || Platform.isWindows|| Platform.isMacOS) {
+  if (Platform.isLinux || Platform.isWindows || Platform.isMacOS) {
     if (runWebViewTitleBarWidget(args)) {
       return;
     }
@@ -126,7 +126,7 @@ class _MyAppState extends ConsumerState<MyApp> {
       routeInformationParser: router.routeInformationParser,
       routerDelegate: router.routerDelegate,
       routeInformationProvider: router.routeInformationProvider,
-      title: 'MangaYomi',
+      title: 'MangaHub',
     );
   }
 }

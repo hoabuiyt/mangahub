@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mangayomi/modules/more/widgets/list_tile_widget.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
+import 'package:mangahub/modules/more/widgets/list_tile_widget.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -41,11 +41,11 @@ class SettingsScreen extends StatelessWidget {
                 subtitle: l10n.downloads_subtitle,
                 icon: Icons.download_outlined,
                 onTap: () => context.push('/downloads')),
-            ListTileWidget(
-                title: l10n.tracking,
-                subtitle: "",
-                icon: Icons.screen_rotation_alt_rounded,
-                onTap: () => context.push('/track')),
+            // ListTileWidget(
+            //     title: l10n.tracking,
+            //     subtitle: "",
+            //     icon: Icons.screen_rotation_alt_rounded,
+            //     onTap: () => context.push('/track')),
             ListTileWidget(
                 title: l10n.browse,
                 subtitle: l10n.browse_subtitle,

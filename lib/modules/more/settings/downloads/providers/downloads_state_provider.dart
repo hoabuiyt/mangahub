@@ -1,7 +1,7 @@
 import 'dart:io';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/providers/storage_provider.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/providers/storage_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'downloads_state_provider.g.dart';
 
