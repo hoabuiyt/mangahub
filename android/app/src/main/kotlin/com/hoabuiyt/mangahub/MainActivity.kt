@@ -1,4 +1,4 @@
-package com.kodjodevf.mangayomi
+package com.hoabuiyt.mangahub
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'package:mangayomi/eval/compiler/compiler.dart';
-import 'package:mangayomi/models/source.dart';
-import 'package:mangayomi/eval/bridge_class/manga_model.dart';
-import 'package:mangayomi/eval/bridge_class/model.dart';
-import 'package:mangayomi/eval/runtime/runtime.dart';
-import 'package:mangayomi/utils/constant.dart';
+import 'package:mangahub/eval/compiler/compiler.dart';
+import 'package:mangahub/models/source.dart';
+import 'package:mangahub/eval/bridge_class/manga_model.dart';
+import 'package:mangahub/eval/bridge_class/model.dart';
+import 'package:mangahub/eval/runtime/runtime.dart';
+import 'package:mangahub/utils/constant.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'get_latest_updates_manga.g.dart';
 
@@ -30,7 +30,7 @@ Future<List<MangaModel?>> getLatestUpdatesManga(
         dateFormatLocale: source.dateFormatLocale))
   ];
   var res = await runtime.executeLib(
-    'package:mangayomi/source_code.dart',
+    'package:mangahub/source_code.dart',
     source.isManga! ? 'getLatestUpdatesManga' : 'getLatestUpdatesAnime',
   );
   try {

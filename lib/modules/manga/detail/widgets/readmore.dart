@@ -1,7 +1,7 @@
 import 'package:expandable_text/expandable_text.dart';
 import 'package:flutter/material.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/media_query.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/media_query.dart';
 
 class ReadMoreWidget extends StatefulWidget {
   const ReadMoreWidget({Key? key, required this.text, required this.onChanged})

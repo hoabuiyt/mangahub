@@ -1,8 +1,8 @@
-import 'package:mangayomi/models/track.dart';
-import 'package:mangayomi/models/track_search.dart';
-import 'package:mangayomi/modules/more/settings/track/providers/track_providers.dart';
-import 'package:mangayomi/services/trackers/anilist.dart';
-import 'package:mangayomi/services/trackers/myanimelist.dart';
+import 'package:mangahub/models/track.dart';
+import 'package:mangahub/models/track_search.dart';
+import 'package:mangahub/modules/more/settings/track/providers/track_providers.dart';
+import 'package:mangahub/services/trackers/anilist.dart';
+import 'package:mangahub/services/trackers/myanimelist.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'track_state_providers.g.dart';
 

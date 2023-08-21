@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:grouped_list/grouped_list.dart';
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/download.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/download.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
 
 class DownloadQueueScreen extends ConsumerWidget {
   const DownloadQueueScreen({super.key});

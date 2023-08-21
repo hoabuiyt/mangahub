@@ -4,11 +4,11 @@ import 'dart:math';
 import 'package:flutter_web_auth_2/flutter_web_auth_2.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
-import 'package:mangayomi/models/track.dart';
-import 'package:mangayomi/models/track_preference.dart';
-import 'package:mangayomi/models/track_search.dart';
-import 'package:mangayomi/modules/more/settings/track/myanimelist/model.dart';
-import 'package:mangayomi/modules/more/settings/track/providers/track_providers.dart';
+import 'package:mangahub/models/track.dart';
+import 'package:mangahub/models/track_preference.dart';
+import 'package:mangahub/models/track_search.dart';
+import 'package:mangahub/modules/more/settings/track/myanimelist/model.dart';
+import 'package:mangahub/modules/more/settings/track/providers/track_providers.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'myanimelist.g.dart';
 

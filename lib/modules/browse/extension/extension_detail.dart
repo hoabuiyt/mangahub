@@ -1,10 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/source.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/language.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/source.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/language.dart';
 
 class ExtensionDetail extends ConsumerWidget {
   final Source source;

@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:dart_eval/stdlib/core.dart';
-import 'package:mangayomi/eval/bridge_class/manga_model.dart';
-import 'package:mangayomi/eval/bridge_class/model.dart';
-import 'package:mangayomi/eval/compiler/compiler.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/video.dart';
-import 'package:mangayomi/eval/runtime/runtime.dart';
-import 'package:mangayomi/sources/utils/utils.dart';
+import 'package:mangahub/eval/bridge_class/manga_model.dart';
+import 'package:mangahub/eval/bridge_class/model.dart';
+import 'package:mangahub/eval/compiler/compiler.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/video.dart';
+import 'package:mangahub/eval/runtime/runtime.dart';
+import 'package:mangahub/sources/utils/utils.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'get_anime_servers.g.dart';
 
@@ -34,7 +34,7 @@ Future<List<Video>> getAnimeServers(
       ))
     ];
     var res = await runtime.executeLib(
-        'package:mangayomi/source_code.dart', 'getVideoList');
+        'package:mangahub/source_code.dart', 'getVideoList');
     if (res is $List) {
       video = res.$reified
           .map(

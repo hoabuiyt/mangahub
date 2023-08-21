@@ -1,5 +1,5 @@
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-import 'package:mangayomi/services/http_service/cloudflare/providers/cookie_providers.dart';
+import 'package:mangahub/services/http_service/cloudflare/providers/cookie_providers.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'cookie.g.dart';
 

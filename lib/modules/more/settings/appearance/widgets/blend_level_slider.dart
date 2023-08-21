@@ -1,8 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/modules/more/settings/appearance/providers/blend_level_state_provider.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
+import 'package:mangahub/modules/more/settings/appearance/providers/blend_level_state_provider.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
 
 class BlendLevelSlider extends ConsumerWidget {
   const BlendLevelSlider({super.key});

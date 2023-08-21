@@ -1,16 +1,16 @@
 // ignore_for_file: depend_on_referenced_packages
 import 'dart:io';
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/category.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/download.dart';
-import 'package:mangayomi/models/history.dart';
-import 'package:mangayomi/models/manga.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/models/source.dart';
-import 'package:mangayomi/models/track.dart';
-import 'package:mangayomi/models/track_preference.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/category.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/download.dart';
+import 'package:mangahub/models/history.dart';
+import 'package:mangahub/models/manga.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/models/source.dart';
+import 'package:mangahub/models/track.dart';
+import 'package:mangahub/models/track_preference.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:path/path.dart' as path;

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/date.dart';
-import 'package:mangayomi/modules/manga/reader/providers/push_router.dart';
-import 'package:mangayomi/utils/colors.dart';
-import 'package:mangayomi/utils/extensions.dart';
-import 'package:mangayomi/utils/utils.dart';
-import 'package:mangayomi/modules/manga/detail/providers/state_providers.dart';
-import 'package:mangayomi/modules/manga/download/download_page_widget.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/date.dart';
+import 'package:mangahub/modules/manga/reader/providers/push_router.dart';
+import 'package:mangahub/utils/colors.dart';
+import 'package:mangahub/utils/extensions.dart';
+import 'package:mangahub/utils/utils.dart';
+import 'package:mangahub/modules/manga/detail/providers/state_providers.dart';
+import 'package:mangahub/modules/manga/download/download_page_widget.dart';
 
 class ChapterListTileWidget extends ConsumerWidget {
   final Chapter chapter;

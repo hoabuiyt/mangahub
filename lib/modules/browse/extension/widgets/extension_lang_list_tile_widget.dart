@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mangayomi/utils/language.dart';
+import 'package:mangahub/utils/language.dart';
 
 class ExtensionLangListTileWidget extends StatelessWidget {
   final String lang;

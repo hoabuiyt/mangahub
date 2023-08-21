@@ -3,19 +3,19 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'package:dart_eval/dart_eval_bridge.dart';
 import 'package:dart_eval/stdlib/core.dart';
-import 'package:mangayomi/eval/bridge_class/manga_model.dart';
-import 'package:mangayomi/eval/bridge_class/model.dart';
-import 'package:mangayomi/eval/compiler/compiler.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/modules/archive_reader/providers/archive_reader_providers.dart';
-import 'package:mangayomi/modules/manga/reader/reader_view.dart';
-import 'package:mangayomi/providers/storage_provider.dart';
-import 'package:mangayomi/eval/runtime/runtime.dart';
-import 'package:mangayomi/sources/utils/utils.dart';
-import 'package:mangayomi/utils/reg_exp_matcher.dart';
-import 'package:mangayomi/modules/more/providers/incognito_mode_state_provider.dart';
+import 'package:mangahub/eval/bridge_class/manga_model.dart';
+import 'package:mangahub/eval/bridge_class/model.dart';
+import 'package:mangahub/eval/compiler/compiler.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/modules/archive_reader/providers/archive_reader_providers.dart';
+import 'package:mangahub/modules/manga/reader/reader_view.dart';
+import 'package:mangahub/providers/storage_provider.dart';
+import 'package:mangahub/eval/runtime/runtime.dart';
+import 'package:mangahub/sources/utils/utils.dart';
+import 'package:mangahub/utils/reg_exp_matcher.dart';
+import 'package:mangahub/modules/more/providers/incognito_mode_state_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'get_chapter_url.g.dart';
 
@@ -76,7 +76,7 @@ Future<GetChapterUrlModel> getChapterUrl(
         ))
       ];
       var res = await runtime.executeLib(
-          'package:mangayomi/source_code.dart', 'getChapterUrl');
+          'package:mangahub/source_code.dart', 'getChapterUrl');
       if (res is $List) {
         for (var element in res.$reified) {
           if (element is $Value) {

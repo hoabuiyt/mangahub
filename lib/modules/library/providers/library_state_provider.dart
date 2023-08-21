@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/manga.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/manga.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'library_state_provider.g.dart';
 

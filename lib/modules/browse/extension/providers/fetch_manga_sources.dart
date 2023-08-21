@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:dart_eval/stdlib/core.dart';
-import 'package:mangayomi/eval/compiler/compiler.dart';
-import 'package:mangayomi/eval/runtime/runtime.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/models/source.dart';
+import 'package:mangahub/eval/compiler/compiler.dart';
+import 'package:mangahub/eval/runtime/runtime.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/models/source.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:http/http.dart' as http;
@@ -155,7 +155,7 @@ Future<String?> getHeaders(String codeSource, String baseUrl) async {
     final runtime = runtimeEval(bytecode);
     runtime.args = [$String(baseUrl)];
     var res = await runtime.executeLib(
-      'package:mangayomi/source_code.dart',
+      'package:mangahub/source_code.dart',
       'getHeader',
     );
     Map<String, String> headers = {};

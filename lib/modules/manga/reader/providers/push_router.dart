@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/source.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/source.dart';
 
 pushMangaReaderView({
   required BuildContext context,

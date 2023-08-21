@@ -6,11 +6,11 @@ import 'package:desktop_webview_window/desktop_webview_window.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/services/http_service/cloudflare/cookie.dart';
-import 'package:mangayomi/utils/constant.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/services/http_service/cloudflare/cookie.dart';
+import 'package:mangahub/utils/constant.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:path/path.dart' as p;
@@ -182,7 +182,6 @@ class _MangaWebViewState extends ConsumerState<MangaWebView> {
                           _url = url.toString();
                         });
                       },
-                      
                       shouldOverrideUrlLoading:
                           (controller, navigationAction) async {
                         var uri = navigationAction.request.url!;
@@ -213,7 +212,6 @@ class _MangaWebViewState extends ConsumerState<MangaWebView> {
                           _url = url.toString();
                         });
                       },
-                      
                       onProgressChanged: (controller, progress) async {
                         setState(() {
                           this.progress = progress / 100;
@@ -233,12 +231,12 @@ class _MangaWebViewState extends ConsumerState<MangaWebView> {
                           _canGoback = canGoback;
                           _canGoForward = canGoForward;
                         });
-                      },initialOptions: InAppWebViewGroupOptions(
-        crossPlatform: InAppWebViewOptions(userAgent: isar.settings.getSync(227)!.userAgent!),
-      ),
-                      
-                      initialUrlRequest:
-                          URLRequest(url: Uri.parse(widget.url)),
+                      },
+                      initialOptions: InAppWebViewGroupOptions(
+                        crossPlatform: InAppWebViewOptions(
+                            userAgent: isar.settings.getSync(227)!.userAgent!),
+                      ),
+                      initialUrlRequest: URLRequest(url: Uri.parse(widget.url)),
                     ),
                   ),
                 ],

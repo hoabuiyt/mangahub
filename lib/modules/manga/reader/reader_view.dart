@@ -8,22 +8,22 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/modules/more/settings/reader/providers/reader_state_provider.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/sources/utils/utils.dart';
-import 'package:mangayomi/modules/manga/reader/providers/push_router.dart';
-import 'package:mangayomi/services/get_chapter_url.dart';
-import 'package:mangayomi/utils/image_detail_info.dart';
-import 'package:mangayomi/utils/media_query.dart';
-import 'package:mangayomi/modules/manga/reader/image_view_center.dart';
-import 'package:mangayomi/modules/manga/reader/image_view_vertical.dart';
-import 'package:mangayomi/modules/manga/reader/providers/reader_controller_provider.dart';
-import 'package:mangayomi/modules/manga/reader/widgets/circular_progress_indicator_animate_rotate.dart';
-import 'package:mangayomi/modules/more/settings/reader/reader_screen.dart';
-import 'package:mangayomi/modules/widgets/progress_center.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/modules/more/settings/reader/providers/reader_state_provider.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/sources/utils/utils.dart';
+import 'package:mangahub/modules/manga/reader/providers/push_router.dart';
+import 'package:mangahub/services/get_chapter_url.dart';
+import 'package:mangahub/utils/image_detail_info.dart';
+import 'package:mangahub/utils/media_query.dart';
+import 'package:mangahub/modules/manga/reader/image_view_center.dart';
+import 'package:mangahub/modules/manga/reader/image_view_vertical.dart';
+import 'package:mangahub/modules/manga/reader/providers/reader_controller_provider.dart';
+import 'package:mangahub/modules/manga/reader/widgets/circular_progress_indicator_animate_rotate.dart';
+import 'package:mangahub/modules/more/settings/reader/reader_screen.dart';
+import 'package:mangahub/modules/widgets/progress_center.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
 import 'package:scrollview_observer/scrollview_observer.dart';
@@ -491,11 +491,19 @@ class _MangaChapterPageGalleryState
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         AnimatedContainer(
-          height: _isView ? Platform.isIOS?120:80 : 0,
+          height: _isView
+              ? Platform.isIOS
+                  ? 120
+                  : 80
+              : 0,
           curve: Curves.ease,
           duration: const Duration(milliseconds: 200),
           child: PreferredSize(
-            preferredSize: Size.fromHeight(_isView ?Platform.isIOS?120: 80 : 0),
+            preferredSize: Size.fromHeight(_isView
+                ? Platform.isIOS
+                    ? 120
+                    : 80
+                : 0),
             child: AppBar(
               centerTitle: false,
               automaticallyImplyLeading: false,

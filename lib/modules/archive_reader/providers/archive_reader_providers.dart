@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:archive/archive_io.dart';
 import 'package:flutter/foundation.dart';
-import 'package:mangayomi/modules/archive_reader/models/models.dart';
+import 'package:mangahub/modules/archive_reader/models/models.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'archive_reader_providers.g.dart';
 
@@ -138,7 +138,8 @@ LocalArchive _extractArchive(String path) {
   return localArchive;
 }
 
-(String, LocalExtensionType, Uint8List, String) _extractArchiveOnly(String path) {
+(String, LocalExtensionType, Uint8List, String) _extractArchiveOnly(
+    String path) {
   final extensionType =
       setTypeExtension(path.split('/').last.split("\\").last.split(".").last);
   final name = path

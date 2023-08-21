@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/providers/storage_provider.dart';
-import 'package:mangayomi/modules/browse/extension/extension_screen.dart';
-import 'package:mangayomi/modules/browse/sources/sources_screen.dart';
-import 'package:mangayomi/modules/library/search_text_form_field.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/providers/storage_provider.dart';
+import 'package:mangahub/modules/browse/extension/extension_screen.dart';
+import 'package:mangahub/modules/browse/sources/sources_screen.dart';
+import 'package:mangahub/modules/library/search_text_form_field.dart';
 
 class BrowseScreen extends ConsumerStatefulWidget {
   const BrowseScreen({super.key});
@@ -20,7 +20,7 @@ class _BrowseScreenState extends ConsumerState<BrowseScreen>
 
   @override
   void initState() {
-    _tabBarController = TabController(length: 4, vsync: this);
+    _tabBarController = TabController(length: 2, vsync: this);
     _tabBarController.animateTo(0);
     _tabBarController.addListener(() {
       _chekPermission();
@@ -43,7 +43,7 @@ class _BrowseScreenState extends ConsumerState<BrowseScreen>
     final l10n = l10nLocalizations(context)!;
     return DefaultTabController(
       animationDuration: Duration.zero,
-      length: 4,
+      length: 2,
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
@@ -69,7 +69,7 @@ class _BrowseScreenState extends ConsumerState<BrowseScreen>
                     },
                     controller: _textEditingController,
                   )
-                : _tabBarController.index != 4
+                : _tabBarController.index != 1
                     ? IconButton(
                         splashRadius: 20,
                         onPressed: () {
@@ -97,15 +97,17 @@ class _BrowseScreenState extends ConsumerState<BrowseScreen>
                 onPressed: () {
                   if (_tabBarController.index == 0) {
                     context.push('/sourceFilter', extra: true);
-                  } else if (_tabBarController.index == 1) {
+                  } /*else if (_tabBarController.index == 1) {
                     context.push('/sourceFilter', extra: false);
-                  } else if (_tabBarController.index == 2) {
+                  } */
+                  else if (_tabBarController.index == 1) {
                     _textEditingController.clear();
                     context.push('/ExtensionLang', extra: true);
-                  } else if (_tabBarController.index == 3) {
+                  } /*else if (_tabBarController.index == 3) {
                     _textEditingController.clear();
                     context.push('/ExtensionLang', extra: false);
-                  } else {}
+                  } */
+                  else {}
                 },
                 icon: Icon(
                     _tabBarController.index == 0 || _tabBarController.index == 1
@@ -122,9 +124,9 @@ class _BrowseScreenState extends ConsumerState<BrowseScreen>
             controller: _tabBarController,
             tabs: [
               Tab(text: l10n.manga_sources),
-              Tab(text: l10n.anime_sources),
+              //Tab(text: l10n.anime_sources),
               Tab(text: l10n.manga_extensions),
-              Tab(text: l10n.anime_extensions),
+              //Tab(text: l10n.anime_extensions),
               // Tab(text: l10n.migrate),
             ],
           ),
@@ -133,17 +135,17 @@ class _BrowseScreenState extends ConsumerState<BrowseScreen>
           const SourcesScreen(
             isManga: true,
           ),
-          const SourcesScreen(
-            isManga: false,
-          ),
+          // const SourcesScreen(
+          //   isManga: false,
+          // ),
           ExtensionScreen(
             query: _textEditingController.text,
             isManga: true,
           ),
-          ExtensionScreen(
-            query: _textEditingController.text,
-            isManga: false,
-          ),
+          // ExtensionScreen(
+          //   query: _textEditingController.text,
+          //   isManga: false,
+          // ),
           // const MigrateScreen()
         ]),
       ),

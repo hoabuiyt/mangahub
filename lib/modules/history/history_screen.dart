@@ -4,19 +4,19 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:grouped_list/grouped_list.dart';
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/chapter.dart';
-import 'package:mangayomi/models/history.dart';
-import 'package:mangayomi/models/manga.dart';
-import 'package:mangayomi/modules/history/providers/isar_providers.dart';
-import 'package:mangayomi/modules/manga/reader/providers/push_router.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/cached_network.dart';
-import 'package:mangayomi/utils/date.dart';
-import 'package:mangayomi/utils/headers.dart';
-import 'package:mangayomi/modules/library/search_text_form_field.dart';
-import 'package:mangayomi/modules/widgets/error_text.dart';
-import 'package:mangayomi/modules/widgets/progress_center.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/chapter.dart';
+import 'package:mangahub/models/history.dart';
+import 'package:mangahub/models/manga.dart';
+import 'package:mangahub/modules/history/providers/isar_providers.dart';
+import 'package:mangahub/modules/manga/reader/providers/push_router.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/cached_network.dart';
+import 'package:mangahub/utils/date.dart';
+import 'package:mangahub/utils/headers.dart';
+import 'package:mangahub/modules/library/search_text_form_field.dart';
+import 'package:mangahub/modules/widgets/error_text.dart';
+import 'package:mangahub/modules/widgets/progress_center.dart';
 
 class HistoryScreen extends ConsumerStatefulWidget {
   const HistoryScreen({super.key});
@@ -148,7 +148,7 @@ class _HistoryScreenState extends ConsumerState<HistoryScreen>
             controller: _tabBarController,
             tabs: [
               Tab(text: l10n.manga),
-              Tab(text: l10n.anime),
+              const Tab(text: ' '), //l10n.anime
             ],
           ),
         ),

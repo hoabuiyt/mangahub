@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/models/source.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/services/search_manga.dart';
-import 'package:mangayomi/modules/manga/home/manga_home_screen.dart';
-import 'package:mangayomi/modules/widgets/gridview_widget.dart';
+import 'package:mangahub/models/source.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/services/search_manga.dart';
+import 'package:mangahub/modules/manga/home/manga_home_screen.dart';
+import 'package:mangahub/modules/widgets/gridview_widget.dart';
 
 class SearchResultScreen extends ConsumerWidget {
   final String query;

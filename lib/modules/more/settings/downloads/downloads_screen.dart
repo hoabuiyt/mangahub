@@ -1,10 +1,10 @@
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/modules/more/settings/downloads/providers/downloads_state_provider.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/colors.dart';
-import 'package:mangayomi/utils/media_query.dart';
+import 'package:mangahub/modules/more/settings/downloads/providers/downloads_state_provider.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/colors.dart';
+import 'package:mangahub/utils/media_query.dart';
 
 class DownloadsScreen extends ConsumerStatefulWidget {
   const DownloadsScreen({super.key});

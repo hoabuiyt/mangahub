@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/services/http_service/cloudflare/providers/cookie_providers.dart';
-import 'package:mangayomi/sources/utils/utils.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/services/http_service/cloudflare/providers/cookie_providers.dart';
+import 'package:mangahub/sources/utils/utils.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'headers.g.dart';
 

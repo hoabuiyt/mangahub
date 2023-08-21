@@ -1,7 +1,7 @@
 import 'package:dart_eval/dart_eval.dart';
 import 'package:dart_eval/dart_eval_bridge.dart';
 import 'package:dart_eval/stdlib/core.dart';
-import 'package:mangayomi/eval/bridge_class/model.dart';
+import 'package:mangahub/eval/bridge_class/model.dart';
 
 class $VideoModel implements VideoModel, $Instance {
   $VideoModel.wrap(this.$value) : _superclass = $Object($value);

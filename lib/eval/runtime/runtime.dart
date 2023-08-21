@@ -1,9 +1,9 @@
 import 'dart:typed_data';
 
 import 'package:dart_eval/dart_eval.dart';
-import 'package:mangayomi/eval/bridge_class/video_model.dart';
-import 'package:mangayomi/eval/m_bridge.dart';
-import 'package:mangayomi/eval/bridge_class/manga_model.dart';
+import 'package:mangahub/eval/bridge_class/video_model.dart';
+import 'package:mangahub/eval/m_bridge.dart';
+import 'package:mangahub/eval/bridge_class/manga_model.dart';
 
 Runtime runtimeEval(Uint8List bytecode) {
   final runtime = Runtime(bytecode.buffer.asByteData());

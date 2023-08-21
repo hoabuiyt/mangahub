@@ -1,7 +1,7 @@
-import 'package:mangayomi/models/video.dart';
+import 'package:mangahub/models/video.dart';
 import 'package:html/parser.dart' show parse;
 import 'package:http/http.dart' as http;
-import 'package:mangayomi/utils/extensions.dart';
+import 'package:mangahub/utils/extensions.dart';
 
 class StreamTapeExtractor {
   Future<List<Video>> videosFromUrl(String url,

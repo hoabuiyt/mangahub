@@ -1,7 +1,7 @@
 import 'package:http/http.dart' as http;
 import 'package:html/parser.dart' as parser;
-import 'package:mangayomi/models/video.dart';
-import 'package:mangayomi/utils/extensions.dart';
+import 'package:mangahub/models/video.dart';
+import 'package:mangahub/utils/extensions.dart';
 
 class SendvidExtractor {
   final http.Client client = http.Client();
@@ -53,8 +53,8 @@ class SendvidExtractor {
             "Referer": "https://${Uri.parse(url).host}/",
           });
 
-        videoList.add(
-            Video(videoUrl, "$prefix - $quality", videoUrl, headers: videoHeaders));
+        videoList.add(Video(videoUrl, "$prefix - $quality", videoUrl,
+            headers: videoHeaders));
       });
 
       return videoList;

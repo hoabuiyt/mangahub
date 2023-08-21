@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/colors.dart';
-import 'package:mangayomi/utils/language.dart';
-import 'package:mangayomi/utils/media_query.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/colors.dart';
+import 'package:mangahub/utils/language.dart';
+import 'package:mangahub/utils/media_query.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class GeneralScreen extends ConsumerWidget {

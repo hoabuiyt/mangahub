@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:desktop_webview_window/desktop_webview_window.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/settings.dart';
-import 'package:mangayomi/models/source.dart';
-import 'package:mangayomi/modules/webview/webview.dart';
-import 'package:mangayomi/services/http_service/cloudflare/cookie.dart';
-import 'package:mangayomi/utils/constant.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/settings.dart';
+import 'package:mangahub/models/source.dart';
+import 'package:mangahub/modules/webview/webview.dart';
+import 'package:mangahub/services/http_service/cloudflare/cookie.dart';
+import 'package:mangahub/utils/constant.dart';
 
 Future<String> cloudflareBypass(
     {required String url,

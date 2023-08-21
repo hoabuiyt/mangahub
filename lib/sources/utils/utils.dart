@@ -1,6 +1,6 @@
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/source.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/source.dart';
 
 Source getSource(String lang, String name) {
   final sourcesList = isar.sources.filter().idIsNotNull().findAllSync();

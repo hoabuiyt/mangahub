@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:isar/isar.dart';
-import 'package:mangayomi/main.dart';
-import 'package:mangayomi/models/source.dart';
-import 'package:mangayomi/providers/l10n_providers.dart';
-import 'package:mangayomi/utils/language.dart';
-import 'package:mangayomi/modules/browse/extension/widgets/extension_lang_list_tile_widget.dart';
+import 'package:mangahub/main.dart';
+import 'package:mangahub/models/source.dart';
+import 'package:mangahub/providers/l10n_providers.dart';
+import 'package:mangahub/utils/language.dart';
+import 'package:mangahub/modules/browse/extension/widgets/extension_lang_list_tile_widget.dart';
 
 class ExtensionsLang extends ConsumerWidget {
   final bool isManga;

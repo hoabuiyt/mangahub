@@ -1,8 +1,8 @@
 import 'package:http/http.dart' as http;
 import 'package:js_packer/js_packer.dart';
-import 'package:mangayomi/models/video.dart';
-import 'package:mangayomi/utils/extensions.dart';
-import 'package:mangayomi/utils/xpath_selector.dart';
+import 'package:mangahub/models/video.dart';
+import 'package:mangahub/utils/extensions.dart';
+import 'package:mangahub/utils/xpath_selector.dart';
 
 class Mp4uploadExtractor {
   static final RegExp qualityRegex = RegExp(r'\WHEIGHT=(\d+)');
